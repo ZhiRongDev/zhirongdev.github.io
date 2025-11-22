@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vCard - Personal Portfolio</title>
+    <title>Zhi Rong Cheng</title>
 
     <!--
     - favicon
@@ -54,7 +54,7 @@
           <div class="info-content">
             <h1 class="name" title="程至榮">程至榮</h1>
 
-            <p class="title">Software Engineer</p>
+            <p class="title">軟體工程師</p>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
@@ -160,12 +160,19 @@
 
           <section class="about-text">
             <p>
-              我是一名軟體工程師，研究所畢業於政治大學資訊科學系
-              生物資料科學實驗室。涉略過的研究領域包含生物資訊、資訊檢索、軟體工程等,
-              目前則是專注於網頁前後端。
+              研究所畢業於政治大學資訊科學系
+              生物資料科學實驗室，涉略過的研究領域包含生物資訊、資訊檢索、軟體工程等,
+              目前在
+              <a
+                class="about-link"
+                href="https://www.htitec.com/"
+                target="_blank"
+                >慧通智聯</a
+              >
+              擔任軟體工程師，專注於網頁前後端的開發。
             </p>
 
-            <p>擅長網頁開發以及各種 AI 工具，讓我用程式來幫你解決問題。</p>
+            <p>擅長網頁開發以及使用各種 AI 工具，讓我用程式來幫你解決問題。</p>
           </section>
 
           <!--
@@ -173,7 +180,7 @@
         -->
 
           <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
+            <h3 class="h3 service-title">技術能力</h3>
 
             <ul class="service-list">
               <li class="service-item">
@@ -187,12 +194,30 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
+                  <h4 class="h4 service-item-title">網頁開發</h4>
 
-                  <p class="service-item-text">
-                    The most modern and high-quality design made at a
-                    professional level.
-                  </p>
+                  <ul>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>全端架構：</strong>熟練使用 Vue.js
+                        開發前端，結合 FastAPI 與 Flask 建構 RESTful API，並利用
+                        Socket.IO 實作即時監控功能。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>效能優化：</strong>運用 Python 的 Asyncio 與
+                        Multiprocessing 解決 I/O 與 CPU 瓶頸；導入 Redis 快取與
+                        Pydantic 型別驗證提升穩定性。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>身份驗證：</strong>具備 JWT 實作經驗，並成功串接
+                        Acer SSO 登入系統與 PostgreSQL 資料庫。
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </li>
 
@@ -206,49 +231,99 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
+                  <h4 class="h4 service-item-title">維運部署</h4>
 
-                  <p class="service-item-text">
-                    High-quality development of sites at the professional level.
-                  </p>
+                  <ul>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>雲地整合：</strong>具備 AWS EC2 雲端與 VMware
+                        地端環境部署經驗，並撰寫 Shell Script 實現自動化更新與
+                        Logrotate 日誌管理。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>伺服器配置：</strong>熟悉 Nginx 反向代理與 SSL
+                        設定，使用 Gunicorn/Uvicorn 優化多進程管理。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>高併發處理：</strong>操作 Slurm
+                        管理叢集運算資源，並使用 Locust 進行萬人等級 (10k+) 的
+                        API 壓力測試。
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
                   <img
-                    src="./assets/images/icon-app.svg"
+                    src="./assets/images/icon-dev.svg"
                     alt="mobile app icon"
                     width="40"
                   />
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                  <h4 class="h4 service-item-title">資料科學</h4>
 
-                  <p class="service-item-text">
-                    Professional development of applications for iOS and
-                    Android.
-                  </p>
+                  <ul>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>核心技能：</strong>專精 Python 與 R
+                        語言，具備平行運算程式撰寫能力，熟悉 Linux 系統操作。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>研究領域：</strong>深耕生物資訊，碩論針對 Hi-C
+                        接觸矩陣 與 Chromatin compartment 進行分析與優化。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>數學底蘊：</strong
+                        >具備扎實數學基礎，能針對演算法（如 PCA
+                        主成分分析）進行推導與底層邏輯優化。
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </li>
 
               <li class="service-item">
                 <div class="service-icon-box">
                   <img
-                    src="./assets/images/icon-photo.svg"
+                    src="./assets/images/icon-dev.svg"
                     alt="camera icon"
                     width="40"
                   />
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
+                  <h4 class="h4 service-item-title">AI 工具</h4>
 
-                  <p class="service-item-text">
-                    I make high-quality photos of any category at a professional
-                    level.
-                  </p>
+                  <ul>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>技術廣度：</strong>涉略領域包含
+                        機器學習、資訊檢索與推薦系統，能將理論應用於實際專案。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>軟實力：</strong>具備獨立研究與文獻探討能力，善於釐清演算法細節。
+                      </p>
+                    </li>
+                    <li>
+                      <p class="service-item-text">
+                        <strong>溝通整合：</strong>能將複雜的模型邏輯轉化為清晰的重點簡報，並有效進行跨領域合作。
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>

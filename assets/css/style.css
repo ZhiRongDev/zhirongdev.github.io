@@ -580,6 +580,15 @@ main {
   text-align: center;
 }
 
+.service-content-box ul {
+  padding-left: 20px;
+}
+
+.service-content-box li {
+  list-style: disc;
+  color: #fff;
+}
+
 .service-item-title {
   margin-bottom: 7px;
 }
@@ -1912,5 +1921,14 @@ textarea.form-input::-webkit-resizer {
 
   .timeline-text {
     max-width: 700px;
+  }
+}
+
+.about-link {
+  display: inline-block;
+  color: var(--orange-yellow-crayola);
+
+  &:hover {
+    color: var(--vegas-gold);
   }
 }
