@@ -315,12 +315,14 @@
                     </li>
                     <li>
                       <p class="service-item-text">
-                        <strong>軟實力：</strong>具備獨立研究與文獻探討能力，善於釐清演算法細節。
+                        <strong>軟實力：</strong
+                        >具備獨立研究與文獻探討能力，善於釐清演算法細節。
                       </p>
                     </li>
                     <li>
                       <p class="service-item-text">
-                        <strong>溝通整合：</strong>能將複雜的模型邏輯轉化為清晰的重點簡報，並有效進行跨領域合作。
+                        <strong>溝通整合：</strong
+                        >能將複雜的模型邏輯轉化為清晰的重點簡報，並有效進行跨領域合作。
                       </p>
                     </li>
                   </ul>
@@ -625,14 +627,16 @@
                     </div>
 
                     <img
-                      src="./assets/images/project-1.jpg"
+                      src="./assets/images/acer_sense_ring.png"
                       alt="finance"
                       loading="lazy"
                       data-project-img
                     />
                   </figure>
 
-                  <h3 class="project-title" data-project-title>Finance</h3>
+                  <h3 class="project-title" data-project-title>
+                    Acer Sense Ring 智慧戒指雲端後台服務
+                  </h3>
 
                   <p class="project-category">Web development</p>
 
@@ -641,10 +645,53 @@
                     data-project-text
                     style="display: none"
                   >
-                    <p>
-                      Finance project description. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit.
-                    </p>
+                    <a href="https://acerring.htitec.com/" target="_blank">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          gap: 5px;
+                          color: var(--orange-yellow-crayola);
+                        "
+                      >
+                        前往專案: <ion-icon name="open-outline"></ion-icon>
+                      </div>
+                    </a>
+                    <ul>
+                      <li>前端使用 Vue.js 建立後台介面。</li>
+                      <li>
+                        後端使用 FastAPI、PostgresSQL 等工具建立穩定的 API 服務:
+                        <ul>
+                          <li>
+                            使用 Pydantic 進行型別驗證、自動產生 Swagger API
+                            文件，節省開發過程的溝通成本。
+                          </li>
+                          <li>
+                            配置 Nginx 處理 SSL
+                            加解密、轉發前後端服務接口，加速請求回應的速度。
+                          </li>
+                          <li>
+                            使用 Gunicorn 搭配 Uvicorn worker 設定多進程，提高
+                            API 吞吐量並提高服務穩定性。
+                          </li>
+                          <li>
+                            基於 Python 的 concurrent 平行任務模組處理 CPU
+                            瓶頸、並使用 asyncio 處理讀取資料的 I/O 瓶頸。
+                          </li>
+                          <li>
+                            使用開源的 Locust 服務壓測 API，服務可以乘載最多同時
+                            10000 位用戶向 Hti Server 發送 API
+                            請求並正確取得資料。
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        串接 Acer 的 Single Sign-on 註冊服務，並透過 Redis
+                        管理登入 Session。
+                      </li>
+                      <li>服務部署於 AWS EC2。</li>
+                      <li>撰寫 Pytest 測試後端 API。</li>
+                    </ul>
                   </div>
                 </a>
               </li>

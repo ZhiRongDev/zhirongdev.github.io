@@ -707,7 +707,7 @@ main {
 }
 
 .modal-title {
-  margin-bottom: 4px;
+  margin-bottom: 15px;
 }
 
 .modal-content p {
@@ -945,6 +945,17 @@ main {
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
+}
+
+.project-text ul,
+[data-modal-text] ul {
+  padding-left: 20px;
+}
+
+.project-text ul li,
+[data-modal-text] ul li {
+  list-style: disc;
+  color: #fff;
 }
 
 .project-item {
@@ -1475,8 +1486,9 @@ textarea.form-input::-webkit-resizer {
     justify-content: flex-start;
     align-items: stretch;
     gap: 25px;
-    padding: 30px;
+    padding: 50px 30px;
     border-radius: 20px;
+    min-width: 70vw;
   }
 
   .modal-img-wrapper {
