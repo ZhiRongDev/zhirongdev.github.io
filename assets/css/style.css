@@ -1032,7 +1032,7 @@ main {
 
 .project-img img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   transition: var(--transition-1);
 }
@@ -1490,17 +1490,11 @@ textarea.form-input::-webkit-resizer {
     min-width: 80vw;
   }
 
-  .modal-content-wrapper::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  .modal-content-wrapper::-webkit-scrollbar-track {
-    background: var(--onyx);
-  }
-
-  .modal-content-wrapper::-webkit-scrollbar-thumb {
-    background: var(--orange-yellow-crayola);
-    border-radius: 20px;
+  .modal-content {
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--orange-yellow-crayola) var(--onyx);
   }
 
   .modal-img-wrapper {
@@ -1516,6 +1510,8 @@ textarea.form-input::-webkit-resizer {
 
   .modal-img-box img {
     width: 100%;
+    max-width: 600px;
+    max-height: 450px;
   }
 
   /* clients */
@@ -1650,6 +1646,24 @@ textarea.form-input::-webkit-resizer {
 
   .modal-img-box img {
     width: 100%;
+  }
+
+  .modal-content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .modal-content::-webkit-scrollbar-track {
+    background: var(--onyx);
+    border-radius: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb {
+    background: var(--orange-yellow-crayola);
+    border-radius: 10px;
+  }
+
+  .modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--vegas-gold);
   }
 
   /**
@@ -1955,4 +1969,22 @@ textarea.form-input::-webkit-resizer {
   &:hover {
     color: var(--vegas-gold);
   }
+}
+
+.to-project-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--orange-yellow-crayola);
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 1.5rem;
 }
