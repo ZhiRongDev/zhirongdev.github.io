@@ -1933,11 +1933,11 @@ textarea.form-input::-webkit-resizer {
     grid-template-columns: 1fr;
   }
 
-  .contact-info :is(.contact-link) {
+  /* .contact-info :is(.contact-link) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+  } */
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
