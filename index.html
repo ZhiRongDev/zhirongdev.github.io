@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zhi Rong Cheng</title>
+    <title>Zhi Rong Cheng 程至榮</title>
 
     <!--
     - favicon
@@ -648,20 +648,34 @@
                     data-project-text
                     style="display: none"
                   >
-                    <!-- <a href="https://acerring.htitec.com/" target="_blank">
+                    <a
+                      href="https://acerring.htitec.com/"
+                      target="_blank"
+                      data-project-link
+                    >
                       <div class="to-project-link">
                         前往專案: <ion-icon name="open-outline"></ion-icon>
                       </div>
-                    </a> -->
-                    <p class="mb-1">公司內部專案無法提供專案網址</p>
+                    </a>
+                    <p class="text-white mb-1 fw-bold">專案描述:</p>
                     <ul>
-                      <li>前端使用 Vue.js 建立後台介面。</li>
+                      <li>
+                        前端使用 Vue.js 建立後台介面。
+                        <ul>
+                          <li>設計對使用者友善的操作介面。</li>
+                          <li>
+                            防範 XSS 攻擊，包含登入憑證使用 Cookie
+                            儲存避免被竊取。
+                          </li>
+                          <li>使用 Gmail SMTP 實作忘記密碼的寄信服務。</li>
+                        </ul>
+                      </li>
                       <li>
                         後端使用 FastAPI、SQLModel、PostgresSQL 等工具建立穩定的
                         API 服務:
                         <ul>
                           <li>
-                            串接 Acer 的 Single Sign-on 註冊服務，並透過 Redis
+                            串接 Acer 的 Single Sign-On 註冊服務，並透過 Redis
                             管理登入 Session。
                           </li>
                           <li>
@@ -670,7 +684,8 @@
                           </li>
                           <li>
                             使用 Gunicorn 設定合理的 Uvicorn worker 提高 API
-                            吞吐量、提高服務穩定性。
+                            吞吐量、提高服務穩定性(根據 CPU Core
+                            與資料庫連線池)。
                           </li>
                           <li>
                             透過 Python 的平行任務模組處理 CPU
@@ -683,6 +698,7 @@
                             的失敗率，且服務全程可用 (模擬最高同時 2000
                             人持續使用服務 10 分鐘)。
                           </li>
+                          <li>使用 FastAPI Typer 建立用於專案的 CLI 工具。</li>
                           <li>使用 Pytest 測試後端 API。</li>
                         </ul>
                       </li>
@@ -764,7 +780,7 @@
                   <ion-icon name="close-outline"></ion-icon>
                 </button>
 
-                <div class="modal-img-wrapper">
+                <a class="modal-img-wrapper" data-modal-img-wrapper>
                   <figure class="modal-img-box">
                     <img
                       src="./assets/images/avatar-1.png"
@@ -772,7 +788,7 @@
                       data-modal-img
                     />
                   </figure>
-                </div>
+                </a>
 
                 <div class="modal-content">
                   <h4 class="h3 modal-title" data-modal-title>Project Title</h4>

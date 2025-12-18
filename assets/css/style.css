@@ -709,6 +709,14 @@ main {
   margin-bottom: 15px;
 }
 
+.modal-content ul {
+  margin-bottom: 10px;
+}
+
+.modal-content li {
+  margin-top: 5px;
+}
+
 .modal-content p {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -1987,4 +1995,12 @@ textarea.form-input::-webkit-resizer {
 
 .mb-2 {
   margin-bottom: 1.5rem;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.fw-bold {
+  font-weight: bold !important;
 }

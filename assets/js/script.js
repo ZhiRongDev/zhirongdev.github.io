@@ -21,6 +21,7 @@ const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
 // modal variable
+const modalImgWrapper = document.querySelector("[data-modal-img-wrapper]");
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
@@ -36,6 +37,10 @@ for (let i = 0; i < projectItem.length; i++) {
   projectItem[i].addEventListener("click", function (e) {
     e.preventDefault();
 
+    if (this.querySelector("[data-project-link]")) {
+      modalImgWrapper.href = this.querySelector("[data-project-link]").href;
+      modalImgWrapper.target = "_blank";
+    }
     modalImg.src = this.querySelector("[data-project-img]").src;
     modalImg.alt = this.querySelector("[data-project-img]").alt;
     modalTitle.innerHTML = this.querySelector("[data-project-title]").innerHTML;
