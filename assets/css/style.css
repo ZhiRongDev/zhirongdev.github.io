@@ -1980,13 +1980,23 @@ textarea.form-input::-webkit-resizer {
 }
 
 .to-project-link {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  display: inline-block;
   color: var(--orange-yellow-crayola);
   cursor: pointer;
   margin-bottom: 20px;
   font-weight: bold;
+}
+
+.to-project-link span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.links {
+  display: inline-block;
+  color: var(--orange-yellow-crayola);
+  cursor: pointer;
 }
 
 .mb-1 {

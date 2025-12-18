@@ -554,84 +554,8 @@
                     </div>
 
                     <img
-                      src="./assets/images/2025_taipeI_hacker.jpg"
-                      alt="finance"
-                      loading="lazy"
-                      data-project-img
-                    />
-                  </figure>
-
-                  <h3 class="project-title" data-project-title>
-                    2025 雙北程式設計節 城市儀表板
-                  </h3>
-
-                  <p class="project-category">網頁開發</p>
-
-                  <div
-                    class="project-text"
-                    data-project-text
-                    style="display: none"
-                  >
-                    <!-- <a href="https://acerring.htitec.com/" target="_blank">
-                      <div class="to-project-link">
-                        前往專案: <ion-icon name="open-outline"></ion-icon>
-                      </div>
-                    </a> -->
-                    <p class="mb-1">公司內部專案無法提供專案網址</p>
-                    <ul>
-                      <li>前端使用 Vue.js 建立後台介面。</li>
-                      <li>
-                        後端使用 FastAPI、PostgresSQL 等工具建立穩定的 API 服務:
-                        <ul>
-                          <li>
-                            使用 Pydantic 進行型別驗證、自動產生 Swagger API
-                            文件，節省開發過程的溝通成本。
-                          </li>
-                          <li>
-                            配置 Nginx 處理 SSL
-                            加解密、轉發前後端服務接口，加速請求回應的速度。
-                          </li>
-                          <li>
-                            使用 Gunicorn 搭配 Uvicorn worker 設定多進程，提高
-                            API 吞吐量並提高服務穩定性。
-                          </li>
-                          <li>
-                            基於 Python 的 concurrent 平行任務模組處理 CPU
-                            瓶頸、並使用 asyncio 處理讀取資料的 I/O 瓶頸。
-                          </li>
-                          <li>
-                            使用開源的 Locust 服務壓測 API，服務可以乘載最多同時
-                            10000 位用戶向 Hti Server 發送 API
-                            請求並正確取得資料。
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        串接 Acer 的 Single Sign-on 註冊服務，並透過 Redis
-                        管理登入 Session。
-                      </li>
-                      <li>服務部署於 AWS EC2。</li>
-                      <li>撰寫 Pytest 測試後端 API。</li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="網頁開發"
-                data-project-item
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
                       src="./assets/images/acer_sense_ring.png"
-                      alt="finance"
+                      alt="acer_sense_ring"
                       loading="lazy"
                       data-project-img
                     />
@@ -649,15 +573,25 @@
                     style="display: none"
                   >
                     <a
+                      class="to-project-link"
                       href="https://acerring.htitec.com/"
                       target="_blank"
                       data-project-link
                     >
-                      <div class="to-project-link">
-                        前往專案: <ion-icon name="open-outline"></ion-icon>
-                      </div>
+                      <span
+                        >前往專案:<ion-icon name="open-outline"></ion-icon>
+                      </span>
                     </a>
-                    <p class="text-white mb-1 fw-bold">專案描述:</p>
+                    <p class="text-white mb-1 fw-bold">
+                      此為
+                      <a
+                        href="https://www.afs-lifestyle.com/zh-TW/products/acer-freesense-ring-all-colors"
+                        target="_blank"
+                        class="links"
+                        >Acer FreeSense Ring 智慧戒指</a
+                      >
+                      的雲端資料同步服務，用於上傳與查詢用戶的健康資料紀錄，並提供管理者後台監看資料上傳狀況。
+                    </p>
                     <ul>
                       <li>
                         前端使用 Vue.js 建立後台介面。
@@ -706,6 +640,82 @@
                         配置 Nginx 處理靜態資源、SSL
                         加解密、服務轉發、流量限制等。
                       </li>
+                      <li>服務部署於 AWS EC2。</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+
+              <!--  -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="網頁開發"
+                data-project-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/data_master.png"
+                      alt="data master"
+                      loading="lazy"
+                      data-project-img
+                    />
+                  </figure>
+
+                  <h3 class="project-title" data-project-title>
+                    Data Master 雲端數據分析平台
+                  </h3>
+
+                  <p class="project-category">網頁開發</p>
+
+                  <div
+                    class="project-text"
+                    data-project-text
+                    style="display: none"
+                  >
+                    <a
+                      class="to-project-link"
+                      href="https://data.masterkits.ai/"
+                      target="_blank"
+                      data-project-link
+                    >
+                      <span
+                        >前往專案:<ion-icon name="open-outline"></ion-icon>
+                      </span>
+                    </a>
+                    <p class="text-white mb-1 fw-bold">
+                      本專案為一套 No-Code
+                      數據分析與機器學習平台，透過直覺化操作取代繁瑣程式撰寫，快速完成數據探索、視覺化、模型訓練與預測。系統支援多種圖表與
+                      AI
+                      分析能力，並提供自動化機器學習訓練、分析與預測，涵蓋分類、回歸、聚類等多種任務，協助使用者高效做出精準決策。
+                    </p>
+                    <ul>
+                      <li>
+                        前端使用 Vue.js 建立 RWD 操作介面:
+                        <ul>
+                          <li>
+                            防範 XSS 攻擊，包含登入憑證使用 Cookie
+                            避免被竊取、使用者輸入欄位消毒檢查等。
+                          </li>
+                          <li>支援 i18n 多國語系，網頁可以進行中英文切換。</li>
+                          <li>設計可以模組化使用的 Vue 以及 JS 元件。</li>
+                          <li>使用 Axios 管理 API 配置。</li>
+                          <li>使用 Plotly 進行資料視覺化。</li>
+                          <li>使用 Vitest 撰寫測試。</li>
+                          <li>串接 Payuni 金流。</li>
+                        </ul>
+                      </li>
+                      <li>
+                        後端使用 Flask 以及 FastAPI 提供 API，包含機器學習、 LLM
+                        圖表分析、RAG
+                        聊天機器人等服務，負責部分程式碼撰寫以及除錯的工作。
+                      </li>
+                      <li>應用 Docker 於程式開發以及部署。</li>
                       <li>服務部署於 AWS EC2。</li>
                     </ul>
                   </div>
