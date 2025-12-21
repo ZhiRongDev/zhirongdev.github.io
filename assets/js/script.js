@@ -40,6 +40,9 @@ for (let i = 0; i < projectItem.length; i++) {
     if (this.querySelector("[data-project-link]")) {
       modalImgWrapper.href = this.querySelector("[data-project-link]").href;
       modalImgWrapper.target = "_blank";
+    } else {
+      modalImgWrapper.removeAttribute("href");
+      modalImgWrapper.removeAttribute("target");
     }
     modalImg.src = this.querySelector("[data-project-img]").src;
     modalImg.alt = this.querySelector("[data-project-img]").alt;
