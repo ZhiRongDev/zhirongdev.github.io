@@ -576,10 +576,6 @@ main {
   margin: auto;
 }
 
-.service-content-box {
-  text-align: center;
-}
-
 .service-content-box ul {
   padding-left: 20px;
 }
@@ -598,6 +594,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  margin-bottom: 8px;
 }
 
 /**
