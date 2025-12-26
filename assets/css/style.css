@@ -706,6 +706,10 @@ main {
   margin-bottom: 15px;
 }
 
+.modal-content {
+  max-width: 600px;
+}
+
 .modal-content ul {
   margin-bottom: 10px;
 }
@@ -833,6 +837,15 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+.timeline-text.list {
+  padding-left: 25px;
+  margin-top: 5px;
+}
+
+.timeline-text.list li {
+  list-style-type: disc;
 }
 
 /**
@@ -1984,6 +1997,10 @@ textarea.form-input::-webkit-resizer {
   font-weight: bold;
 }
 
+.to-project-link:hover {
+  color: var(--vegas-gold);
+}
+
 .to-project-link span {
   display: flex;
   align-items: center;
@@ -1994,6 +2011,10 @@ textarea.form-input::-webkit-resizer {
   display: inline-block;
   color: var(--orange-yellow-crayola);
   cursor: pointer;
+}
+
+.links:hover {
+  color: var(--vegas-gold);
 }
 
 .mb-1 {
