@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,11 +44,8 @@
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
-            <img
-              src="./assets/images/avatar.png"
-              alt="Richard hanrick"
-              width="80"
-            />
+            <img src="./assets/images/avatar.png" alt="Zhi Rong cheng width="80"
+            draggable="false" />
           </figure>
 
           <div class="info-content">
@@ -69,10 +66,6 @@
 
           <ul class="contacts-list">
             <li class="contact-item">
-              <!-- <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div> -->
-
               <div class="contact-info">
                 <p class="contact-title">信箱</p>
 
@@ -83,10 +76,6 @@
             </li>
 
             <li class="contact-item">
-              <!-- <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div> -->
-
               <div class="contact-info">
                 <p class="contact-title">居住地</p>
 
@@ -138,10 +127,6 @@
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>專案</button>
             </li>
-
-            <!-- <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li> -->
 
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>聯絡我</button>
@@ -200,17 +185,20 @@
                   <ul>
                     <li class="service-item-text">
                       熟悉 Vue 3 生態系（Vite / Pinia / Router），能串接 REST
-                      API 與即時資料（Socket.IO），
-                      重視效能與使用者體驗，具備模組化開發習慣。
+                      API
+                      與即時資料（Socket.IO），重視效能與使用者體驗，具備模組化開發習慣，並能使用
+                      Vitest、Playwright 撰寫單元與端對端（E2E）測試。
                     </li>
                     <li class="service-item-text">
-                      擅長使用 Flask, FastAPI 設計 API 服務，熟悉 JWT / OAuth2
-                      驗證與權限設計， 具備 Postgres / Redis 資料庫實務經驗。
+                      擅長使用 Flask、FastAPI 設計 API 服務，熟悉 JWT / OAuth2
+                      驗證與權限設計，具備 PostgreSQL、Redis
+                      資料庫實務經驗，並能以 Pytest 撰寫後端單元與整合測試，確保
+                      API 穩定性與可維護性。
                     </li>
                     <li class="service-item-text">
-                      使用 Docker / Docker Compose 建立一致的部署環境， 熟悉
-                      CI/CD 流程（自動測試、建置、部署）， 具備 Nginx
-                      反向代理與服務監控實務經驗。
+                      使用 Docker / Docker Compose 建立一致的部署環境，熟悉
+                      CI/CD 流程（自動測試、建置、部署），具備 Nginx
+                      反向代理與服務監控實務經驗，能將測試流程整合至自動化管線中。
                     </li>
                   </ul>
                 </div>
@@ -231,7 +219,7 @@
 
                   <ul>
                     <li class="service-item-text">
-                      熟悉資料清洗、特徵工程與探索式資料分析（EDA），使用
+                      熟悉資料清洗、特徵工程與探索式資料分析，使用
                       Python（Pandas / NumPy / Plotly）。
                     </li>
                     <li class="service-item-text">
@@ -341,12 +329,13 @@
 
                 <ul class="timeline-text list">
                   <li>
-                    GPA: 4.25/4.3 (<a
+                    GPA: 4.25/4.3
+                    <!-- (<a
                       href="https://drive.google.com/file/d/1XTE7qqky4-QXrwB-CwQArL4W8ObuCexD/view"
                       target="_blank"
                       class="links"
                       >成績單連結</a
-                    >)
+                    >) -->
                   </li>
                   <li>111 學年度研究生獎學金</li>
                 </ul>
@@ -361,12 +350,13 @@
 
                 <ul class="timeline-text list">
                   <li>
-                    GPA: 4.01/4.3 (<a
+                    GPA: 4.01/4.3
+                    <!-- (<a
                       href="https://drive.google.com/file/d/1MGjyOuL2-8rgRzXg0lp3LZGyMl34eBHM/view"
                       target="_blank"
                       class="links"
                       >成績單連結</a
-                    >)
+                    >) -->
                   </li>
                   <li>曾獲得三次書香獎</li>
                 </ul>
@@ -462,17 +452,11 @@
               <li class="filter-item">
                 <button class="active" data-filter-btn>All</button>
               </li>
-
-              <!-- <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li> -->
-
-              <!-- <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li> -->
-
               <li class="filter-item">
                 <button data-filter-btn>網頁開發</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>資料科學</button>
               </li>
             </ul>
 
@@ -511,15 +495,15 @@
                     </div>
 
                     <img
-                      src="./assets/images/acer_sense_ring.png"
-                      alt="acer_sense_ring"
+                      src="./assets/images/rag_chat.png"
+                      alt="rag chat"
                       loading="lazy"
                       data-project-img
                     />
                   </figure>
 
                   <h3 class="project-title" data-project-title>
-                    Acer Sense Ring 智慧戒指雲端服務
+                    RAG & LangGraph 聊天機器人
                   </h3>
 
                   <p class="project-category">網頁開發</p>
@@ -531,7 +515,7 @@
                   >
                     <a
                       class="to-project-link"
-                      href="https://acerring.htitec.com/"
+                      href="https://zhirong-chat.zeabur.app/"
                       target="_blank"
                       data-project-link
                     >
@@ -540,71 +524,96 @@
                       </span>
                     </a>
                     <p class="text-white mb-1 fw-bold">
-                      此為
+                      此為個人 Side Project，實作一套結合 RAG、LangGraph 與 Web
+                      Search API 的 LLM 聊天平台。
+
                       <a
-                        href="https://www.afs-lifestyle.com/zh-TW/products/acer-freesense-ring-all-colors"
+                        class="to-project-link"
+                        href="https://github.com/ZhiRongDev/chat"
                         target="_blank"
-                        class="links"
-                        >Acer FreeSense Ring 智慧戒指</a
                       >
-                      的雲端資料同步服務，用於上傳與查詢用戶的健康資料紀錄，並提供管理者後台監看資料上傳狀況。
+                        <span
+                          >前往 GitHub:<ion-icon name="open-outline"></ion-icon>
+                        </span>
+                      </a>
                     </p>
                     <ul>
                       <li>
-                        前端使用 Vue.js 建立後台介面
-                        <strong>(目前支持桌面版本，手機版本未開發)</strong>。
+                        前端使用 Vue 3 + TypeScript 建立聊天介面
                         <ul>
-                          <li>設計對使用者友善的操作介面。</li>
                           <li>
-                            防範 XSS 攻擊，包含登入憑證使用 Cookie
-                            儲存避免被竊取。
+                            提供即時聊天介面，支援一般 LLM 與 RAG 回覆模式。
                           </li>
-                          <li>使用 Gmail SMTP 實作忘記密碼的寄信服務。</li>
+                          <li>
+                            支援 Markdown 與程式碼高亮顯示，提升 AI 回應可讀性。
+                          </li>
+                          <li>使用 Pinia 與 Vue Router 管理狀態與頁面流程。</li>
+                          <li>
+                            透過 VeeValidate + Yup
+                            進行表單驗證，避免不合法輸入。
+                          </li>
+                          <li>
+                            使用 Vitest 與 Playwright 進行單元與 E2E 測試。
+                          </li>
                         </ul>
                       </li>
+
                       <li>
-                        後端使用 FastAPI、SQLModel、PostgresSQL 等工具建立穩定的
-                        API 服務:
+                        後端使用 FastAPI 建立高效能 LLM 與 RAG API 服務
                         <ul>
                           <li>
-                            串接 Acer 的 Single Sign-On 註冊服務，並透過 Redis
-                            管理登入 Session。
+                            整合 LangGraph
+                            Agent，依照使用者問題動態判斷是否需要進行 Web
+                            Search。
                           </li>
                           <li>
-                            基於 Pydantic 進行型別驗證、自動產生 Swagger API
+                            串接 Gemini File Search
+                            API，實作文件上傳、向量化、語意檢索與 RAG 回覆。
+                          </li>
+                          <li>
+                            支援多家 LLM Provider（Gemini / OpenAI /
+                            Anthropic）。
+                          </li>
+                          <li>使用 JWT 與 bcrypt 實作使用者驗證與權限控管。</li>
+                          <li>
+                            提供 Email 驗證與忘記密碼流程，透過 Gmail SMTP
+                            發送驗證信與重設連結。
+                          </li>
+                          <li>
+                            使用 SQLModel + PostgreSQL
+                            建立關聯式資料模型，並透過 Alembic 管理資料庫遷移。
+                          </li>
+                          <li>
+                            使用 Redis 實作滑動視窗 Rate
+                            Limiter，限制使用者請求頻率。
+                          </li>
+                          <li>
+                            基於 Pydantic 進行型別驗證並自動產生 Swagger API
                             文件。
                           </li>
                           <li>
-                            使用 Gunicorn 設定合理的 Uvicorn worker 提高 API
-                            吞吐量、提高服務穩定性(根據 CPU Core
-                            與資料庫連線池)。
+                            使用 pytest 撰寫後端測試，確保核心功能穩定性。
                           </li>
-                          <li>
-                            透過 Python 的平行任務模組處理 CPU
-                            瓶頸，並善用快取與非同步的機制處理 I/O
-                            瓶頸、避免服務阻塞。
-                          </li>
-                          <li>
-                            使用 Locust 進行 API 壓測，在只有 4 vCPUs
-                            的情況下可以達到 303.61 RPS 與不到 0.2%
-                            的失敗率，且服務全程可用 (模擬最高同時 2000
-                            人持續使用服務 10 分鐘)。
-                          </li>
-                          <li>使用 FastAPI Typer 建立用於專案的 CLI 工具。</li>
-                          <li>使用 Pytest 測試後端 API。</li>
                         </ul>
                       </li>
+
                       <li>
-                        配置 Nginx 處理靜態資源、SSL
-                        加解密、服務轉發、流量限制等。
+                        系統架構與部署
+                        <ul>
+                          <li>
+                            使用 Docker 與 Docker Compose 建立開發與正式環境。
+                          </li>
+                          <li>正式環境透過 Nginx 處理反向代理與靜態資源。</li>
+                          <li>
+                            整合 Zeabur CI/CD，GitHub Push 後自動建置與部署。
+                          </li>
+                        </ul>
                       </li>
-                      <li>服務部署於 AWS EC2。</li>
                     </ul>
                   </div>
                 </a>
               </li>
 
-              <!--  -->
               <li
                 class="project-item active"
                 data-filter-item
@@ -694,6 +703,101 @@
                     </div>
 
                     <img
+                      src="./assets/images/acer_sense_ring.png"
+                      alt="acer_sense_ring"
+                      loading="lazy"
+                      data-project-img
+                    />
+                  </figure>
+
+                  <h3 class="project-title" data-project-title>
+                    Acer Sense Ring 智慧戒指雲端服務
+                  </h3>
+
+                  <p class="project-category">網頁開發</p>
+
+                  <div
+                    class="project-text"
+                    data-project-text
+                    style="display: none"
+                  >
+                    <p class="mb-1">本專案無法提供網址。</p>
+                    <p class="text-white mb-1 fw-bold">
+                      <a
+                        href="https://www.afs-lifestyle.com/zh-TW/products/acer-freesense-ring-all-colors"
+                        target="_blank"
+                        class="links"
+                        >Acer FreeSense Ring 智慧戒指</a
+                      >
+                      的雲端資料同步服務，用於上傳與查詢用戶的健康資料紀錄，並提供管理者後台監看資料上傳狀況。
+                    </p>
+                    <ul>
+                      <li>
+                        前端使用 Vue.js 建立後台介面。
+                        <ul>
+                          <li>設計對使用者友善的操作介面。</li>
+                          <li>
+                            防範 XSS 攻擊，包含登入憑證使用 Cookie
+                            儲存避免被竊取。
+                          </li>
+                          <li>使用 Gmail SMTP 實作忘記密碼的寄信服務。</li>
+                        </ul>
+                      </li>
+                      <li>
+                        後端使用 FastAPI、SQLModel、PostgresSQL 等工具建立穩定的
+                        API 服務:
+                        <ul>
+                          <li>
+                            串接 Acer 的 Single Sign-On 註冊服務，並透過 Redis
+                            管理登入 Session。
+                          </li>
+                          <li>
+                            基於 Pydantic 進行型別驗證、自動產生 Swagger API
+                            文件。
+                          </li>
+                          <li>
+                            使用 Gunicorn 設定合理的 Uvicorn worker 提高 API
+                            吞吐量、提高服務穩定性(根據 CPU Core
+                            與資料庫連線池)。
+                          </li>
+                          <li>
+                            透過 Python 的平行任務模組處理 CPU
+                            瓶頸，並善用快取與非同步的機制處理 I/O
+                            瓶頸、避免服務阻塞。
+                          </li>
+                          <li>
+                            使用 Locust 進行 API 壓測，在只有 4 vCPUs
+                            的情況下可以達到 303.61 RPS 與不到 0.2%
+                            的失敗率，且服務全程可用 (模擬最高同時 2000
+                            人持續使用服務 10 分鐘)。
+                          </li>
+                          <li>使用 FastAPI Typer 建立用於專案的 CLI 工具。</li>
+                          <li>使用 Pytest 測試後端 API。</li>
+                        </ul>
+                      </li>
+                      <li>
+                        配置 Nginx 處理靜態資源、SSL
+                        加解密、服務轉發、流量限制等。
+                      </li>
+                      <li>服務部署於 AWS EC2。</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="網頁開發"
+                data-project-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
                       src="./assets/images/ota.png"
                       alt="orizon"
                       loading="lazy"
@@ -703,6 +807,63 @@
 
                   <h3 class="project-title" data-project-title>
                     OTA 更新派送平台
+                  </h3>
+
+                  <p class="project-category">網頁開發</p>
+
+                  <div
+                    class="project-text"
+                    data-project-text
+                    style="display: none"
+                  >
+                    <p class="mb-1">本專案無法提供網址，此為示意圖。</p>
+
+                    <ul>
+                      <li>
+                        建立韌體 OTA 更新平台，透過 NFS 檔案伺服器派送更新檔案。
+                      </li>
+                      <li>
+                        前端用 Vue.js
+                        建立使用者介面，功能包含派送檔案的上傳與資料檢查、歷史紀錄查詢、派送設定等，並透過
+                        Socket.IO 即時監控檔案上傳進度。
+                      </li>
+                      <li>
+                        後端使用 Flask、PostgresSQL 等工具建立 API 服務，並搭配
+                        JWT 實作登入驗證。
+                      </li>
+                      <li>
+                        設定 SSL
+                        憑證並撰寫腳本自動更新平台以及部署，服務佈署於公司內部的
+                        VMware Workstation。
+                      </li>
+                      <li>配置 Logrotate 定期紀錄日誌。</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="網頁開發"
+                data-project-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/2025_taipeI_hacker.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                      data-project-img
+                    />
+                  </figure>
+
+                  <h3 class="project-title" data-project-title>
+                    2025 雙北程式設計節 - 城市儀表板
                   </h3>
 
                   <p class="project-category">網頁開發</p>
@@ -735,6 +896,46 @@
                         VMware Workstation。
                       </li>
                       <li>配置 Logrotate 定期紀錄日誌。</li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="資料科學"
+                data-project-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/2025_taipeI_hacker.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                      data-project-img
+                    />
+                  </figure>
+
+                  <h3 class="project-title" data-project-title>HiCPEP</h3>
+
+                  <p class="project-category">資料科學</p>
+
+                  <div
+                    class="project-text"
+                    data-project-text
+                    style="display: none"
+                  >
+                    <p class="mb-1">
+                      公司內部專案無法提供專案網址，此為示意圖。
+                    </p>
+
+                    <ul>
+                      <li>碩論</li>
                     </ul>
                   </div>
                 </a>
@@ -976,17 +1177,6 @@
           <header>
             <h2 class="h2 article-title">聯絡我</h2>
           </header>
-
-          <!-- <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section> -->
 
           <section class="contact-form">
             <h3 class="h3 form-title">填寫表單</h3>
