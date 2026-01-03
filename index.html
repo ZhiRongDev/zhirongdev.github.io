@@ -133,9 +133,9 @@
               <button class="navbar-link" data-nav-link>專案</button>
             </li>
 
-            <li class="navbar-item">
+            <!-- <li class="navbar-item">
               <button class="navbar-link" data-nav-link>聯絡我</button>
-            </li>
+            </li> -->
           </ul>
         </nav>
 
@@ -1032,7 +1032,9 @@
                     />
                   </figure>
 
-                  <h3 class="project-title" data-project-title>HiCPEP</h3>
+                  <h3 class="project-title" data-project-title>
+                    HiCPEP (碩士畢業論文)
+                  </h3>
 
                   <p class="project-category">資料科學</p>
 
@@ -1041,13 +1043,43 @@
                     data-project-text
                     style="display: none"
                   >
-                    <p class="mb-1">
-                      公司內部專案無法提供專案網址，此為示意圖。
-                    </p>
+                    <a
+                      class="to-project-link"
+                      href="https://drive.google.com/file/d/1GF9iEa4f9zsvgU-Ub6kJFOVcRuM5Iepk/view?usp=sharing"
+                      target="_blank"
+                      data-project-link
+                    >
+                      <span
+                        >下載原文:<ion-icon name="open-outline"></ion-icon>
+                      </span>
+                    </a>
 
-                    <ul>
-                      <li>碩論</li>
-                    </ul>
+                    <h4 class="text-white fw-bold">碩論摘要:</h4>
+                    <p>
+                      在 Hi-C 皮爾森相關矩陣中識別 A 和 B
+                      染色體區室的標準作法是基於主
+                      成份分析,然而其運作原理卻鮮少被討論。對於 Hi-C
+                      皮爾森相關矩陣,我們提出其第一主成份的變異解釋率通常很高,並且該解釋率反應了
+                      PC1 與
+                      皮爾森相關矩陣上之區室的匹配程度。此外,我們提出了一種啟發式算法,
+                      透過 Hi-C
+                      皮爾森相關矩陣的共變異矩陣估計出第一主成份的型態,而不需
+                      要直接進行主成份分析。我們的啟發式算法可以使用隨機抽樣有效的實現
+                      以加快計算速度,為了解決高解析度下的記憶體瓶頸,我們使用一種最近
+                      發表的區室識別工具 POSSUMM 改進了算法,它接受稀疏的 Hi-C
+                      O/E 矩
+                      陣作為輸入。在我們的實驗中,我們的算法在時間或是記憶體使用上,其
+                      基準測試的表現優於使用 Scikit-learn 和 POSSUMM
+                      等軟體工具的幂迭代法 (Power
+                      iteration),同時與作為基準答案的第一主成份有高相似度。程式碼
+                      公開於下列網址
+                      <a
+                        href="https://github.com/ZhiRongDev/HiCPEP"
+                        class="links fw-bold"
+                        target="_blank"
+                        >https://github.com/ZhiRongDev/HiCPEP</a
+                      >。
+                    </p>
                   </div>
                 </a>
               </li>
@@ -1284,7 +1316,7 @@
         - #CONTACT
       -->
 
-        <article class="contact" data-page="聯絡我">
+        <!-- <article class="contact" data-page="聯絡我">
           <header>
             <h2 class="h2 article-title">聯絡我</h2>
           </header>
@@ -1327,7 +1359,7 @@
               </button>
             </form>
           </section>
-        </article>
+        </article> -->
       </div>
     </main>
 
